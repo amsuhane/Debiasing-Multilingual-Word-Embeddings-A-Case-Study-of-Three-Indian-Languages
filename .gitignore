@@ -1,0 +1,17 @@
+# Ignore all
+*
+
+# Unignore all with extensions
+!*.*
+
+# Unignore all dirs
+!*/
+
+# Ignore pycache
+__pycache__/
+
+*.pkl
+*.gdoc
+*.txt
+*.gsheet
+*.csv
