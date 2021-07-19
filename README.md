@@ -28,7 +28,7 @@ Download options:
     * Run using `python generate_cross_lingual_embeddings.py`
 * generate_cross_lingual_embeddings.py: Aligns embedding from language lang1 to lang2
     * Run using `python generate_cross_lingual_embeddings.py lang1 lang2`
-ex: `python generate_cross_lingual_embeddings.py bn hi`
+    * ex: `python generate_cross_lingual_embeddings.py bn hi`
 * MKB/alignment_runner.py: wrapper code for alignment.py
     * Run using `python MKB/alignment.py`
 * MKB/alignment.py: Evaluates debiased embeddings
@@ -39,7 +39,7 @@ ex: `python generate_cross_lingual_embeddings.py bn hi`
 
 ### How to run
 * Download datasets and embeddings using: `download_embedding.sh` with _essential_ option
-- Run `generate_cross_lingual_embeddings_runner.py` to generate all bilingual embeddings.
+* Run `generate_cross_lingual_embeddings_runner.py` to generate all bilingual embeddings.
     * Input: MKD dataset, aligned text files from data/MKB and data/aligned_files
     * Output: Aligned embeddings will be saved to data/embedding/Bilingual/
 * Run `debias_run_runner.py` to generate all debiased embeddings. 
