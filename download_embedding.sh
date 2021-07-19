@@ -1,5 +1,5 @@
 #!/bin/bash
-echo -n "Which Files should be downloaded [All, fasttext, bilingual, EQR, LID, aligned_files, MKB, MKB_pickle, BIOS]: "
+echo -n "Which Files should be downloaded [All, essential, fasttext, bilingual, EQR, LID, aligned_files, MKB, MKB_pickle, BIOS]: "
 read EMB
 
 mkdir -p data/
@@ -12,7 +12,7 @@ mkdir -p aligned_files
 mkdir -p MKB
 mkdir -p BIOS
 
-if [ $EMB = fasttext ] || [ $EMB = All ]
+if [ $EMB = fasttext ] || [ $EMB = All ] || [ $EMB = essential ]
 then     
     cd embedding/fasttext/
     gdown --id 13UPpFVwxOf5A56sGVtoGm2yiaFd_OHTY
@@ -76,7 +76,7 @@ then
     cd ../../
 fi
 
-if [ $EMB = aligned_files ] || [ $EMB = All ]
+if [ $EMB = aligned_files ] || [ $EMB = All ] || [ $EMB = essential ]
 then 
     cd aligned_files/
     gdown --id 1-2brthWXhhAwgnFhXFqUHwJiEl2Ootq5
@@ -110,7 +110,7 @@ then
     cd ../
 fi
 
-if [ $EMB = MKB_pickle ] || [ $EMB = All ]
+if [ $EMB = MKB_pickle ] || [ $EMB = All ] || [ $EMB = essential ]
 then 
     cd MKB
     gdown --id 1-3MJSl6VuL9nHijj2PAa0eapyjn1jMpr
